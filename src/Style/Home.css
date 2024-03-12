@@ -1,0 +1,29 @@
+* {
+    border: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+.home_style {
+    font-family: Lato;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 78px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #312B2B;
+}
+
+.home_stylish{
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #312B2B;    
+}
+
+.img_style{
+    height: 500px;
+}

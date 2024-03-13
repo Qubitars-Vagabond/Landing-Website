@@ -1,8 +1,11 @@
 .background-image{
     background-image: url('../Images/Group.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     /* opacity: 0.75; */
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
 }
 

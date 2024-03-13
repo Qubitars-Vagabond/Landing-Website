@@ -1,0 +1,87 @@
+.app_services_heading {
+    font-family: Lato;
+  color: #ffffff;
+  text-align: justify;
+}
+
+
+.app_service_card_1 {
+  background-image: url("../Images/Card_about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+   color: #ffffff;
+  padding: 40px;
+}
+
+.app_service_para_img {
+  display: flex;
+  flex-direction: row;
+}
+
+.app_service_card_para {
+    font-family: Lato;
+    text-align: justify;
+  padding-right: 10px; 
+  margin-top: 5%;
+  font-weight: 400;
+}
+.app_service_img {
+  height: auto;
+  width: 100%;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.Expert_heading {
+  color: #00bbdc;
+}
+.Sub_heading{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 50px;
+
+}
+
+
+@media (max-width: 1280px) {
+  .app_services_heading {
+    padding: 0 10px 0 30px;
+  }
+  .App_row {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+@media (max-width: 1192px) {
+  .app_services_heading {
+    padding: 0 10px 0 30px;
+  }
+
+  .app_services_para {
+    padding: 0 10px 0 30px;
+  }
+  .app_service_card_1 {
+    padding: 20px 30px 20px 30px;
+    margin-bottom: 20px;
+  }
+
+  .App_row {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+}
+@media (max-width: 575.98px) {
+  .App_row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .app_services_heading {
+    text-align: center;
+  }
+  .app_services_para {
+    padding: 0 0 0 10px;
+    text-align: center;
+  }
+}

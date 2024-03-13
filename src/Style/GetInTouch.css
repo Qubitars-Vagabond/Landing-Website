@@ -1,0 +1,77 @@
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: white;
+  border: 1px solid var(--primary-color);
+  padding: 20px 40px;
+  outline: none;
+  color: #123054;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px var(--primary-color);
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.submit-button {
+  width: 175px;
+  height: 57px;
+  border-radius: 40px;
+  background-color:#345473;
+  border: none;
+  color:white;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+
+.submit-button:hover {
+  background-color: #345473;
+}
+
+
+@media (max-width: 768px) {
+  .qoute-container {
+    width: 90%; /* Adjust the width as needed for smaller screens */
+    margin-top: 0; /* Remove the margin for smaller screens */
+    padding: 20px; /* Add padding for smaller screens if needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column; /* Stack items vertically in mobile view */
+    padding: 20px 0;
+  }
+
+  .contact-us-left,
+  .contact-us-right {
+    width: 100%; /* Full width for both columns */
+    margin: 10px 0; /* Add some margin between the columns */
+  }
+}
+
+/* Adjust styles for screens smaller than 768px (e.g., mobile) */
+@media (max-width: 768px) {
+  .contact-us-right {
+    width: 100%;
+    display: block;
+  }
+
+  .custom-input-group input,
+  .custom-input-group select {
+    width: 48%;
+    display: block;
+  }
+}

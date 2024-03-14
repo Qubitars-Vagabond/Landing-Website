@@ -6,7 +6,6 @@
   margin: 16px 0;
   border: 0;
   background: white;
-  border: 1px solid var(--primary-color);
   padding: 20px 40px;
   outline: none;
   color: #123054;
@@ -15,7 +14,13 @@
 }
 
 .contact-form-text:focus {
-  box-shadow: 0 0 10px 4px var(--primary-color);
+  box-shadow: 0 0 10px 4px #00BBDC;
+}
+.Touch-head{
+  color: #312B2B;
+}
+.Touch-para{
+  color: #123054;
 }
 
 textarea.contact-form-text {
@@ -37,8 +42,16 @@ textarea.contact-form-text {
 }
 
 .submit-button:hover {
-  background-color: #345473;
+  background-color: #345473;  
 }
+.contact-us-left{
+  background-color: #00BBDC;
+  border-radius: 25px;
+  color: #233B53;
+  padding: 40px;
+
+}
+
 
 
 @media (max-width: 768px) {

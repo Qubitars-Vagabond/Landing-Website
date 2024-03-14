@@ -1,161 +1,78 @@
-import React, { useState } from "react";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import {
-  Button,
-  Stack,
-  AppBar,
-  Box,
-  Typography,
-  Divider,
-  List,
-  ListItem,
-  ListItemButton,
-  Drawer,
-  ListItemText,
-  Toolbar,
-} from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
-import Headerstyle from "./Navbar.style";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import CloseIcon from "@mui/icons-material/Close";
-import { createTheme } from "@mui/material/styles";
-import Badge from "@mui/material/Badge";
-import Logo from "../Images/Vagabond Logo.png";
-import Grid from '@mui/material/Grid';
+import React, { useState } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import './Navbar.css'
+import Logo from '../Images/Vagabond Logo.png'
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { AiFillCloseSquare } from "react-icons/ai";
+import { IoReorderThreeOutline } from "react-icons/io5";
 
-function Navbar() {
-  const navigate = useNavigate();
+export const Navbar = () => {
 
-  const navItems = [
-    <Link to="/home" style={Headerstyle.linkstyle}>
-      <Typography>Home </Typography>
-    </Link>,
-    <Link to="/about" style={Headerstyle.linkstyle}>
-      <Typography> About </Typography>
-    </Link>,
-    <Link to="/product" style={Headerstyle.linkstyle}>
-      <Typography>Features </Typography>
-    </Link>,
+    const [show, setShow] = useState(false);
 
-    <Link to="/Shoppingcartpage" style={Headerstyle.linkstyle}>
-      <Typography>Get Application </Typography>
-    </Link>,
-  ];
-  const drawerWidth = 240;
-  const [mobileOpen, setMobileOpen] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+    const navigate = useNavigate();
 
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{textAlign: "center"}}>
-      <Divider />
-      <List>
-        <img src={Logo} style={{width: "100%"}} />
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{textAlign: "center"}}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-  return (
-    <Box>
-      <AppBar position="static" sx={Headerstyle.Appbarstyle}>
-        <Toolbar disableGutters variant="dense">
-          <IconButton
-            size="large"
-            edge="start"
-            aria-label="menu"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleDrawerToggle}
-            color="inherit"
-            sx={{ display: {lg: "none", xs: "flex" },color:"black"}} >
-            <MenuIcon />
-          </IconButton>
-          <Box
-            component="div"
-            sx={{display: {xs:'none',sm:'block'}}}>
-            <img
-              src={Logo}
-              alt="logo"
-              className="logo-image"
-              onClick={() => navigate("/")}
-              style={{cursor:"pointer"}}
-            />
-          </Box>
-          <Grid container>
-          <Grid  xs={10}
-           sx={Headerstyle.nav}
-          >
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              display: { lg: "flex", md: "none", sm: "none", xs: "none"}}}>
-              <Link to="/" style={Headerstyle.linkstyle}>
-                <Typography sx={Headerstyle.navItem}>Home</Typography>
-              </Link>
-              <Link to="/about" style={Headerstyle.linkstyle}>
-                <Typography sx={Headerstyle.navItem}>About</Typography>
-              </Link>
-              <Link to="/features" style={Headerstyle.linkstyle}>
-                <Typography sx={Headerstyle.navItem}>Features</Typography>
-              </Link>
-              <Link to="/getapplication" style={Headerstyle.linkstyle}>
-                <Typography sx={Headerstyle.navItem}>
-                  Get Application
-                </Typography>
-              </Link>
-              
-              <Stack direction="row">
-                <Link to="/login" style={Headerstyle.linkstyle}>
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    className="quote-button"
-                    sx={Headerstyle.QuoteButton}
-                    onClick={() => navigate("/getintouch")}
-                  >
-                    Get in Touch
-                  </Button>
-                </Link>
-              </Stack>
-        
-          </Box>
+    return (
+        <>
+            <nav className="navbar navbar-expand-lg">
+                <div className="container nav_body">
+                    <img src={Logo} alt="" onClick={() => navigate('/')} style={{ cursor: "pointer" }} />
+                    <div className='d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block'>
+                        <ul className="navbar-nav gap-5">
+                            <li className="nav-item">
+                                <NavLink to="/" className="nav_link">Home</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/about" className="nav_link">About</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/features" className="nav_link">Features</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/getapplication" className="nav_link">Get Application</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='d-flex align-items-center'>
+                        <Button onClick={handleShow} className="d-xxl-none d-xl-none d-lg-none d-block">
+                            <IoReorderThreeOutline />
+                        </Button>
+                        <button className='get_btn d-xxl-block d-xl-block d-lg-block d-none' onClick={() => navigate('/getintouch')}>
+                            Get in Touch
+                        </button>
+                    </div>
+                </div>
+            </nav>
 
-            </Grid>
-          </Grid>
-
-         
-        </Toolbar>
-      </AppBar>
-      <nav>
-        <Drawer
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true,
-          }}
-          sx={{
-            display: { xs: "block", lg: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-    </Box>
-  );
+            {/* offcanvas */}
+            <Offcanvas show={show} onHide={handleClose} placement="top">
+                <div className='d-flex justify-content-end pt-2 pe-4'>
+                    <button type="button" className='close_btn' onClick={handleClose}><AiFillCloseSquare /></button>
+                </div>
+                <div className='d-flex justify-content-center align-items-center flex-column'>
+                    <ul className="navbar-nav gap-5 ">
+                        <li className="nav-item">
+                            <NavLink to="/" className="nav_link">Home</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/about" className="nav_link">About</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/features" className="nav_link">Features</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/getapplication" className="nav_link">Get Application</NavLink>
+                        </li>
+                    </ul>
+                    <button className='get_btn mt-5' onClick={() => navigate('/getintouch')}>
+                        Get in Touch
+                    </button>
+                </div>
+            </Offcanvas>
+        </>
+    )
 }
-
-export default Navbar;

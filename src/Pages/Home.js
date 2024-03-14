@@ -29,13 +29,13 @@ export const Home = () => {
               Mapping Journeys, <br /> One Location <br /> at a Time.
             </p>
             <p
-              data-aos="zoom-out-down"
+              data-aos="zoom-in-right"
               data-aos-duration="2000"
               className="home_stylish">
               Empowering Your Wanderlust by Helping You Curate, Map, and
               Conquer Your Bucket List Destinations.
             </p>
-            <div className="d-flex">
+            <div className="button-group">
               <button className='App_btn'>
                 <span className="m-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">

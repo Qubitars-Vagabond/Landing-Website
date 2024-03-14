@@ -8,10 +8,29 @@ import  Features  from './Pages/Features';
 import { GetApplication } from './Pages/GetApplication';
 import { GetInTouch } from './Pages/GetInTouch';
 import { Layout } from './layout/layout';
+import Vegabond from './Images/Vegabondgif.gif'
 
 
 function App() {
+  const [loading, setloading] = useState(false);
+  useEffect(() => {
+    setloading(true);
+    setTimeout(() => {
+      setloading(false);
+    }, 2000);
+  }, []);
   return (
+    <div className="App">
+
+    {loading ? (
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 cliploader">
+            <img src={Vegabond}  loading={loading} />
+          </div>
+        </div>
+      </div>
+    ) : (
     <BrowserRouter >
       <Routes>
         <Route element={<Layout />}>
@@ -22,7 +41,11 @@ function App() {
           <Route path="/getintouch" element={<GetInTouch />} />
         </Route>
       </Routes>
+     
     </BrowserRouter>
+    )}
+      </div>
+
   );
 }
 

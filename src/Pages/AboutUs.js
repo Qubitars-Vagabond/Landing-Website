@@ -1,5 +1,5 @@
 import React from "react";
-import Rectanglefive from "../Images/Aboutus.png";
+import Rectanglefive from "../Images/Aboutus.jpg";
 import Rectangleone from "../Images/person-icon.png";
 import Facebook from '../Images/facebook.png'
 import Instragram from '../Images/instragram.png'

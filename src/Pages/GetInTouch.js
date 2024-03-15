@@ -103,7 +103,7 @@ export const GetInTouch = () => {
                   <div class="card-body p-2">
                  
                     <p
-                    class="card-text">info@vagabond.com.</p>
+                    class="card-text">hr@vagabond.com</p>
                   </div>
                 </div>
               </div>
@@ -118,7 +118,22 @@ export const GetInTouch = () => {
                   <div class="card-body p-2">
                  
                     <p
-                    class="card-text">info@vagabond.com.</p>
+                    class="card-text">+1 304 303 46.</p>
+                  </div>
+                </div>
+              </div>
+              <br/>
+              <div class="row g-0">
+                <div class="col-md-2">
+                    <div className="icon-style">
+                <img src={Mailicon} class="img-fluid" alt="..." />
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body p-2">
+                 
+                    <p
+                    class="card-text">24 Hours Service</p>
                   </div>
                 </div>
               </div>

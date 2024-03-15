@@ -3,11 +3,14 @@
   padding: none;
   box-sizing: border-box;
 }
+.home-container{
+  padding-top: 40px;
+}
 
 .home_style {
   font-family: Lato;
   font-size: 64px;
-  padding: 12px;
+  padding: 18px;
   font-weight: 500;
   line-height: 78px;
   letter-spacing: 0em;
@@ -17,15 +20,20 @@
 .home_stylish {
   font-family: Lato;
   font-size: 17px;
+  padding: 20px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
   color: #312b2b;
 }
 
 .animatiom-image{
-  height: 80%;
+  display: flex;
+  gap: 10px;
+}
+.animatiom-image img{
+  margin: auto;
 }
 .App_btn {
   width: 175px;
@@ -39,6 +47,11 @@
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0em;
+}
+.App_btn:hover{
+  background-color:white;
+  color:black;
+  
 }
 .Play_btn {
   width: 175px;
@@ -62,3 +75,158 @@
   display: flex;
   gap: 20px;
 }
+@media (max-width: 1192px) {
+  .animatiom-image{
+    width: 100%;
+    display: block;
+    }
+    .home_style {
+     font-family: Lato;
+     font-size: 60px;
+     padding: 20px;
+     font-weight: 500;
+     line-height: 70px;
+     letter-spacing: 0em;
+     color: #312b2b;
+   }
+   
+   .home_stylish {
+     font-family: Lato;
+     font-size: 25px;
+     font-weight: 400;
+     line-height: 40px;
+     letter-spacing: 0em;
+     padding: 20px;
+
+     color: #312b2b;
+   }
+   .home-container{
+     padding-top: 20px;
+   }
+   .button-group{
+     display: flex;
+     margin: 15px;
+   }
+   .animatiom-image img{
+    width: 100%;
+    margin: auto;
+   }
+ 
+}
+   @media (max-width: 992px) {
+    .animatiom-image{
+      width: 100%;
+      display: block;
+      }
+      .home_style {
+       font-family: Lato;
+       font-size: 50px;
+       padding: 20px;
+       font-weight: 500;
+       line-height: 70px;
+       letter-spacing: 0em;
+       color: #312b2b;
+     }
+     
+     .home_stylish {
+       font-family: Lato;
+       font-size: 19px;
+       font-weight: 400;
+       line-height: 40px;
+       letter-spacing: 0em;
+       padding: 20px;
+
+       color: #312b2b;
+     }
+     .home-container{
+       padding-top: 20px;
+     }
+     .button-group{
+       display: flex;
+       margin: 15px;
+     }
+     .animatiom-image img{
+      width: 100%;
+      margin: auto;
+     }
+    
+  } 
+
+   @media (max-width: 767.98px) {
+
+  } 
+
+   @media (max-width: 575px) {
+    .animatiom-image{
+       width: 100%;
+       display: block;
+       }
+       .home_style {
+        font-family: Lato;
+        font-size: 40px;
+        padding: 20px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 0em;
+        color: #312b2b;
+      }
+      
+      .home_stylish {
+        font-family: Lato;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        padding: 20px;
+
+        color: #312b2b;
+      }
+      .home-container{
+        padding-top: 20px;
+      }
+      .button-group{
+        display: flex;
+        margin: 15px;
+      }
+      .animatiom-image img{
+        display: none;
+      }
+
+      .App_btn {
+        width: 175px;
+        height: 57px;
+        border-radius: 40px;
+        background-color:#345473;
+        border: none;
+        color:white;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+      }
+      .App_btn:hover{
+        background-color:white;
+        color:black;
+        
+      }
+      .Play_btn {
+        width: 175px;
+        height: 57px;
+        border-radius: 40px;
+        background-color:white;
+        border: none;
+        color:black;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+      }
+      .Play_btn:hover{
+        background-color:#345473;
+        color: white;
+        
+      }
+
+  } 

@@ -1,16 +1,14 @@
 
 .contact-form-text {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
   margin: 16px 0;
-  border: 0;
   background: white;
+  width: 100%;
+  border: 3px solid #F5F5F5;
+  border-radius: 18px;
   padding: 20px 40px;
   outline: none;
   color: #123054;
   transition: 0.5s;
-  border-radius: 5px;
 }
 
 .contact-form-text:focus {
@@ -25,7 +23,7 @@
 
 textarea.contact-form-text {
   resize: none;
-  height: 120px;
+  height: 170px;
 }
 .submit-button {
   width: 175px;
@@ -48,8 +46,26 @@ textarea.contact-form-text {
   background-color: #00BBDC;
   border-radius: 25px;
   color: #233B53;
-  padding: 40px;
+  padding: 30px;
 
+}
+.icon-contact {
+  background-color: #312B2B;
+  font-size: 30px;
+  color:#00BBDC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.social-icon:hover {
+  background-color: #00bbdc;
+  color: white;
+}
+.contact-text{
+  font-size: 25px;
+  color: #233B53;
+  font-weight: 600;
+  
 }
 
 

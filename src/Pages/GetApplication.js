@@ -18,7 +18,7 @@ export const GetApplication = () => {
               loading="lazy"
             />
           </div>
-          <div className="col-md-6 mt-3 px-5 pt-5">
+          <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-3 px-5 pt-5">
            
               <span 
                 data-aos="zoom-in-right"

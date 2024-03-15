@@ -8,7 +8,7 @@ import  Features  from './Pages/Features';
 import { GetApplication } from './Pages/GetApplication';
 import { GetInTouch } from './Pages/GetInTouch';
 import { Layout } from './layout/layout';
-import Vegabond from './Images/Vegabondgif.gif'
+import Vegabond from './Images/Vega.gif'
 
 
 function App() {

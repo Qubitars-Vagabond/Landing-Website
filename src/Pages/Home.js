@@ -13,28 +13,22 @@ import 'aos/dist/aos.css'
 import { useNavigate } from 'react-router-dom'
 
 AOS.init();
-
-
 export const Home = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState({
     img1:Rectangle 
   });
 
-
-
-
-
-  return (
+return (
     <>
-      <div className="container pt-5">
+      <div className="container hero-container">
         <div className="row p-0">
-          <div className="col-lg-5 p-0">
+          <div className="col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-5 p-0">
             <p
               data-aos="zoom-in-right"
               data-aos-duration="2000"
               className="home_style">
-              Mapping Journeys, <br /> One Location <br /> at a Time.
+              Mapping Journeys, One Location at a Time.
             </p>
             <p
               data-aos="zoom-in-right"
@@ -63,8 +57,8 @@ export const Home = () => {
               </button>
             </div>
           </div>
-          <div className="col-lg-6">
-            <div className="d-flex m-auto gap-4 animatiom-image">
+          <div className="col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-5">
+            <div className="animatiom-image">
            <img src={Rectangle} />
               <img src={Rectangleone} />
               <img src={Rectangletwo} />

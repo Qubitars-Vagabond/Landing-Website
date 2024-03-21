@@ -21,7 +21,7 @@ const AboutUs = () => {
     <section>
       <div className="container  about-top">
         <div className="row p-0">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 p-0">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
             <div className="app_service_card_1">
               <div className="app_service_car_head">
                 <h3

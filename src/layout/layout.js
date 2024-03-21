@@ -8,11 +8,15 @@ import { GetApplication } from '../Pages/GetApplication'
 import { GetInTouch } from '../Pages/GetInTouch'
 import {Navbar} from '../Navbar/Navbar'
 
-export const Layout = (props) => {
+export const Layout = () => {
     return (
-        <div class="background-image">
+        <div>
+     <div className="overlay">
+        <div className="element">
             <Navbar/>
             <Outlet/>
+        </div>
+        </div>
         </div>
     )
 }

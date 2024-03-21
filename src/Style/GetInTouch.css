@@ -1,37 +1,60 @@
+.benifit_card {
+  background-color:  #00BBDC;
+  /* background-color: rgba(0, 187, 220, 0.2);  */
+  box-shadow: 0px 0px 0px 0px;
+  padding: 60px 100px 100px 40px;
+  color: #233b53;
+  border-radius: 10px;
+  border-radius: 10px 0 0px 10px;
+  position: relative;
+}
+
+.benifit_card_corner {
+  background-color: #345473;
+  padding: 20px 50px 50px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+.main-saction {
+  display: flex;
+  gap: 10px;
+}
 
 .contact-form-text {
   margin: 16px 0;
   background: white;
   width: 100%;
-  border: 3px solid #F5F5F5;
+  border: 3px solid #f5f5f5;
   border-radius: 18px;
-  padding: 20px 40px;
+  padding: 20px 30px 25px 40px;
   outline: none;
   color: #123054;
   transition: 0.5s;
 }
 
 .contact-form-text:focus {
-  box-shadow: 0 0 10px 4px #00BBDC;
+  box-shadow: 0 0 10px 4px #00bbdc;
 }
-.Touch-head{
-  color: #312B2B;
+.Touch-head {
+  color: #312b2b;
+  font-size: 60px;
 }
-.Touch-para{
+.Touch-para {
   color: #123054;
 }
 
 textarea.contact-form-text {
   resize: none;
-  height: 170px;
 }
 .submit-button {
   width: 175px;
   height: 57px;
   border-radius: 40px;
-  background-color:#345473;
+  background-color: #345473;
   border: none;
-  color:white;
+  color: white;
   font-family: Lato;
   font-size: 14px;
   font-weight: 700;
@@ -40,67 +63,168 @@ textarea.contact-form-text {
 }
 
 .submit-button:hover {
-  background-color: #345473;  
+  background-color: #345473;
 }
-.contact-us-left{
-  background-color: #00BBDC;
-  border-radius: 25px;
-  color: #233B53;
-  padding: 30px;
 
-}
 .icon-contact {
-  background-color: #312B2B;
-  font-size: 30px;
-  color:#00BBDC;
+  background-color: #312b2b;
+  font-size: 40px;
+  color: #00bbdc;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
+  padding: 5px;
 }
 .social-icon:hover {
   background-color: #00bbdc;
   color: white;
 }
-.contact-text{
+.contact-text {
   font-size: 25px;
-  color: #233B53;
+  color: #233b53;
   font-weight: 600;
-  
+}
+.Gotouch-hero{
+  padding-left: 110px;
+  padding-right: 110px;
+}
+.benifit_card_hero{
+  margin-top: 70px;
+
+}
+.Gotouch-hero{
+  margin-top: 32px;
 }
 
-
-
-@media (max-width: 768px) {
-  .qoute-container {
-    width: 90%; /* Adjust the width as needed for smaller screens */
-    margin-top: 0; /* Remove the margin for smaller screens */
-    padding: 20px; /* Add padding for smaller screens if needed */
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-us-container {
-    flex-direction: column; /* Stack items vertically in mobile view */
-    padding: 20px 0;
-  }
-
-  .contact-us-left,
-  .contact-us-right {
-    width: 100%; /* Full width for both columns */
-    margin: 10px 0; /* Add some margin between the columns */
-  }
-}
-
-/* Adjust styles for screens smaller than 768px (e.g., mobile) */
-@media (max-width: 768px) {
-  .contact-us-right {
+@media only screen and (max-width: 1192px) {
+  .animatiom-image {
     width: 100%;
     display: block;
   }
-
-  .custom-input-group input,
-  .custom-input-group select {
-    width: 48%;
+  .Responsive_card_hero {
+    margin: auto;
+    padding-top: 50px;
+  }
+  .benifit_card {
+    background-color:  #00BBDC;
+    /* Set the background color with decreased opacity */
+    box-shadow: 0px 0px 0px 0px;
+    padding: 80px 100px 100px 70px;
+    color: #233b53;
+    border-radius: 10px;
+    border-radius: 10px 0 0px 10px;
+    position: relative;
+  }
+  .Gotouch-hero {
+    padding-left: 81px !important;
+    padding-right: 81px !important;
+  }
+  .rightdiv-hero { 
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+  .icon-contact {
+    display: none; /* Hidden on larger screens */
+  }
+  .contact-text {
+    font-size: 18px;
+    color: #233b53;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .animatiom-image {
+    width: 100%;
     display: block;
+  }
+  .Responsive_card_hero {
+    margin: auto;
+    padding-top: 50px;
+  }
+  .benifit_card {
+    background-color:  #00BBDC;
+    /* Set the background color with decreased opacity */
+    box-shadow: 0px 0px 0px 0px;
+    padding: 80px 100px 100px 70px;
+    color: #233b53;
+    border-radius: 10px;
+    border-radius: 10px 0 0px 10px;
+    position: relative;
+  }
+  .Gotouch-hero {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+  .rightdiv-hero { 
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+  .icon-contact {
+    display: none; /* Hidden on larger screens */
+  }
+  .contact-text {
+    font-size: 18px;
+    color: #233b53;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .animatiom-image {
+    width: 100%;
+    display: block;
+  }
+  .Responsive_card_hero {
+    margin: auto;
+    padding-top: 50px;
+  }
+  .benifit_card {
+    background-color:  #00BBDC;
+    /* Set the background color with decreased opacity */
+    box-shadow: 0px 0px 0px 0px;
+    padding: 80px 100px 100px 70px;
+    color: #233b53;
+    border-radius: 10px;
+    border-radius: 10px 0 0px 10px;
+    position: relative;
+  }
+  .Gotouch-hero {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+  .rightdiv-hero { 
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .icon-contact {
+    display: none; /* Hidden on larger screens */
+  }
+  .contact-text {
+    font-size: 18px;
+    color: #233b53;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* Styles specific to smaller screens */
+  .Gotouch-hero {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .benifit_card {
+    background-color: #00bbdc;
+    box-shadow: 0px 0px 0px 0px;
+    padding: 80px 100px 100px 40px; /* Overriding padding */
+    color: #233b53;
+    border-radius: 10px;
+  }
+  .icon-contact {
+    display: block; /* Displayed on smaller screens */
+    background-color: #312b2b;
+    font-size: 30px;
+    color: #00bbdc;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .contact-text {
+    font-size: 17px; /* Adjusted font size */
   }
 }

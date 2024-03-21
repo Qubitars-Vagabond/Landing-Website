@@ -6,9 +6,10 @@ import { Home } from './Pages/Home';
 import  About  from './Pages/AboutUs';
 import  Features  from './Pages/Features';
 import { GetApplication } from './Pages/GetApplication';
-import { GetInTouch } from './Pages/GetInTouch';
+import  GetInTouch  from './Pages/GetInTouch';
 import { Layout } from './layout/layout';
 import Vegabond from './Images/Vega.gif'
+import "./index.css"
 
 
 function App() {
@@ -20,18 +21,18 @@ function App() {
     }, 2000);
   }, []);
   return (
-    <div className="App">
-
+    <div className="overlay">
+    <div className="element">
     {loading ? (
       <div className="container">
         <div className="row">
-          <div className="col-md-12 cliploader">
+          <div className='col-md-12 loader-adjustment'>
             <img src={Vegabond}  loading={loading} />
           </div>
         </div>
       </div>
     ) : (
-    <BrowserRouter >
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -40,10 +41,11 @@ function App() {
           <Route path="/getapplication" element={<GetApplication />} />
           <Route path="/getintouch" element={<GetInTouch />} />
         </Route>
+        
       </Routes>
-     
-    </BrowserRouter>
+      </BrowserRouter>
     )}
+      </div>
       </div>
 
   );

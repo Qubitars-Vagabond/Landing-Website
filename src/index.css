@@ -4,15 +4,64 @@
   margin: 0;
 }
 
-.cliploader img {
-  margin-top: 20%;
-background-image: url('../src//Images/Group.png');
-/* opacity: 0.75; */
-height: 100vh;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-max-width: 100%;
-overflow: hidden;
-  
+
+
+.overlay{
+  background-color: #F5F5F6 ;
+  position: absolute;
+  left: 0; 
+  right: 0;
+
 }
+.element {
+  background-image: url('../src//Images//Group.png');
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 100vh; /* Set height to cover entire viewport */
+
+
+}
+.loader-adjustment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+
+
+}
+.loader-adjustment img{
+  width:400px;
+  height:400px;
+    margin: auto;
+}
+
+  /* Adjust height for mobile devices */
+  @media (max-width: 768px) {
+   
+   
+    .element {
+      background-image: url('../src//Images//Group.png');
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+      height: auto !important;
+    
+    
+    }
+  }
+  @media (max-width: 575px) {
+   
+   
+    .element {
+      background-image: url('../src//Images//Group.png');
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+      height: auto !important;
+
+    
+    
+    }
+  }
+

@@ -19,9 +19,9 @@ AOS.init();
 const AboutUs = () => {
   return (
     <section>
-      <div className="container  mt-5">
+      <div className="container  about-top">
         <div className="row p-0">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 p-0">
             <div className="app_service_card_1">
               <div className="app_service_car_head">
                 <h3
@@ -60,7 +60,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 About-image">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 About-image">
               <img
                 src={Rectanglefive}
                 className="img-fluid"

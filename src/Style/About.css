@@ -12,7 +12,9 @@
   color: #ffffff;
   padding: 40px;
 }
-
+.about-top{
+  margin-top: 50px;
+}
 .app_service_para_img {
   display: flex;
   flex-direction: row;

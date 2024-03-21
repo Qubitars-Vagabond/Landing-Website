@@ -11,6 +11,7 @@
 .future_scope_para{
     color:#312B2B;
     font-weight: 500;
+    margin-top: 20px;
 
 }
 .Feature_btn {
@@ -39,14 +40,21 @@
     line-height: 17px;
     letter-spacing: 0em;
   }
+  .robot{
+    width: 100%;
+  }
   .Feature_play:hover{
     background-color:#345473;
     color: white;
     
   }
   .Application-group{
+    margin-top: 50px;
     display:block;
     gap: 10px;
+  }
+  .introduce-column{
+    margin-left: auto;
   }
   @media (max-width: 575px) {
     .introduce-column{

@@ -41,8 +41,7 @@ function App() {
           <Route path="/getapplication" element={<GetApplication />} />
           <Route path="/getintouch" element={<GetInTouch />} />
         </Route>
-        
-      </Routes>
+         </Routes>
       </BrowserRouter>
     )}
       </div>

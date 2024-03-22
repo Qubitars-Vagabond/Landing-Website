@@ -1,8 +1,8 @@
 .search_engine{
    font-family: Lato;
-   font-weight: 600;
-   font-size: 19px;
-   line-height: 18px;
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 22px;
    color: #123054;
      margin-top: 6%;
    }
@@ -18,13 +18,27 @@
    .start_para{
        text-align: center;
        margin: auto;
-   
+       font-size: 14px;
+       color:  #123054;
+
+  }
+   .card-body{
+    padding: 6px 19px;
+   }
+   .search_paragraph{
+    font-size: 13px;
+    color:  #123054;
    }
    .right_para{
     text-align: end;
+    font-size: 13px;
+
    }
    .right_head{
     text-align: end;
+    color:  #123054;
+    font-weight: 700;
+   font-size: 17px;
    }
    .categories_left_side {
     display: flex;
@@ -36,8 +50,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width:70px;
-    height: 70px;
+    width:60px;
+    height: 60px;
 
   }
    
@@ -46,11 +60,12 @@
        align-items: center;
        justify-content: center;
    }
+
    .Features_space{
     color:#00BBDC;
     text-align: center;
    }
-
+  
 
  @media (max-width: 575px) {
   .icon-style{

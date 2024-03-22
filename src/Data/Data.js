@@ -25,7 +25,7 @@ const Data = {
     {
       title: "TRAVEL TRACKER",
       paragraph:
-        "On a road trip and want to track your route?  VAGABOND’s integrated “Travel With Me” function allows you to start a tracker,",
+        "On a road trip and want to track your route?  VAGABOND’s integrated.",
       image: staticesimage,
     },
   ],

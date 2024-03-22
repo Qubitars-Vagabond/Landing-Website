@@ -28,13 +28,14 @@
   text-align: left;
   color: #312b2b;
 }
-
 .animatiom-image{
-  display: flex;
-  gap: 10px;
+  margin-left: auto;
 }
+
 .animatiom-image img{
-  margin: auto;
+  width: 100%;
+
+  
 }
 .App_btn {
   width: 175px;

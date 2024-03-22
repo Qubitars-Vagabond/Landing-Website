@@ -21,10 +21,10 @@ export const Home = () => {
 
 return (
     <>
-        <div class="background-image">
+    <div class="background-image">
       <div className="container hero-container">
         <div className="row p-0">
-          <div className="col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-5 p-0">
+          <div className="col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-6 p-0">
             <p
               data-aos="zoom-in-right"
               data-aos-duration="2000"
@@ -58,11 +58,10 @@ return (
               </button>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-5">
-            <div className="animatiom-image">
+          <div className="col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-4 animatiom-image">
+            <div>
            <img src={Rectangle} />
-              <img src={Rectangleone} />
-              <img src={Rectangletwo} />
+           {/* <img src={Rectangleone} /> */}
             </div>
           </div>
         </div>

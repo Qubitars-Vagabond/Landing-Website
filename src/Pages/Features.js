@@ -9,7 +9,7 @@ AOS.init();
 const Features = () => {
   return (
     <div>
-      <div className="container mt-2">
+      <div className="container mt-1 ">
         
         <div className="start_head">
         <h5
@@ -41,18 +41,14 @@ const Features = () => {
                   </div>
                 </div>
                 <div class="col-md-10">
-                  <div class="card-body p-2">
+                  <div class="card-body ">
                     <h5
-                      data-aos="zoom-in-right"
-                      data-aos-duration="2000"
                       class="search_engine"
                     >
                       {item.title}
                     </h5>
                     <p
-                      data-aos="zoom-out-down"
-                      data-aos-duration="2000"
-                      class="card-text"
+                      class="card-text search_paragraph"
                     >
                       {item.paragraph}
                     </p>
@@ -75,10 +71,8 @@ const Features = () => {
             {Data.rightsaction.map((item, index) => (
               <div class="row g-0" key={index}>
                 <div class="col-md-10 icon-alignment">
-                  <div class="card-body p-2">
+                  <div class="card-body">
                     <h5
-                      data-aos="zoom-in-right"
-                      data-aos-duration="2000"
                       class="right_head"
                     >
                       {item.title}

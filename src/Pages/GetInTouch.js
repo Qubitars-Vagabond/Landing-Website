@@ -53,7 +53,7 @@ const GetInTouch = (props) => {
             >
               Get in Touch
             </h1>
-            <form className="contact-section" onSubmit={props.handleSubmit}>
+            <form  action="https://formspree.io/f/meqylnzd" method="POST">
               <div
                 data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
@@ -91,7 +91,7 @@ const GetInTouch = (props) => {
                     </div>
                   </div>
 
-                <button className="submit-button">Send message</button>
+                <button className="submit-button" type="submit">Send message</button>
               </div>
             </form>
           </div>

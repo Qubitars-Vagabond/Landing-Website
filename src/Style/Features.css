@@ -72,25 +72,38 @@
     background-color: #233C54;
     object-fit: cover;
     border-radius: 50%;
-    width:100px;
-    height: 100px;
+    width:50px;
+    height: 50px;
      margin: auto;
+     display: none;
   
 }
+.search_paragraph{
+  font-size: 18px;
+ }
 .search_engine{
    text-align: center;
+   font-size: 23px !important;
   }
   .card-text{
     text-align: center;
   }
   .start_para{
+    font-size: 18px;
     text-align: center;
+    font-weight: 500;
   }
   .right_head{
     text-align: center;
+    font-size: 23px !important;
+    font-weight: 600;
   }
   .right_para{
     text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+
+
   }
 
   
@@ -115,5 +128,17 @@
       padding: 20px;
       text-align: center;
     }
+    .search_paragraph {
+      font-size: 17px;
+      color: #123054;
+  }
+  .right_para{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+
+
+  }
+
 
 }

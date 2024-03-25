@@ -9,7 +9,7 @@ AOS.init();
 const Features = () => {
   return (
     <div>
-      <div className="container mt-1 ">
+      <div className="container mt-4">
         
         <div className="start_head">
         <h5
@@ -43,13 +43,11 @@ const Features = () => {
                 <div class="col-md-10">
                   <div class="card-body ">
                     <h5
-                      class="search_engine"
-                    >
+                      class="search_engine">
                       {item.title}
                     </h5>
                     <p
-                      class="card-text search_paragraph"
-                    >
+                      class="card-text search_paragraph" >
                       {item.paragraph}
                     </p>
                   </div>

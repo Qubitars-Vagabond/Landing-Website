@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .home-container{
-  padding-top: 40px;
+  padding-top: 3%;
 }
 
 .home_style {
@@ -37,6 +37,47 @@
 
   
 }
+.image-section {
+  --childs: 3;
+  --gap: 10px;
+  display: flex;
+  gap: var(--gap);
+  justify-content: flex-end;
+}
+
+.box {
+  width: calc((100% / var(--childs)));
+  height:12cm;
+  background-color: white;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+  transition: width 300ms 50ms ease-in-out;
+}
+
+.box:hover {
+  width: calc((100% / (var(--childs) - 2)));
+}
+
+.box-1 {
+  background-image: url("../Images/Rectangle 2.png");
+}
+
+.box-2 {
+  background-image: url("../Images/Group\ 340.png");
+}
+
+.box-3 {
+  background-image: url("../Images/Group 3411.png");
+}
+
+.box-2:hover ~ .box-1,
+.box-3:hover ~ .box-1 {
+  width: calc((100% / (var(--childs) - 2)));
+}
+
 .App_btn {
   width: 175px;
   height: 57px;
@@ -77,6 +118,11 @@
   display: flex;
   gap: 20px;
 }
+.hovered {
+  background-color: white;
+  color:black;
+
+}
 @media (max-width: 1192px) {
   .animatiom-image{
     width: 100%;
@@ -91,6 +137,7 @@
      letter-spacing: 0em;
      color: #312b2b;
    }
+
    
    .home_stylish {
      font-family: Lato;
@@ -159,6 +206,7 @@
   } 
 
    @media (max-width: 575px) {
+
     .animatiom-image{
        width: 100%;
        display: block;
@@ -168,9 +216,10 @@
         font-size: 40px;
         padding: 20px;
         font-weight: 500;
-        line-height: 50px;
+        line-height: 40px;
         letter-spacing: 0em;
         color: #312b2b;
+        margin-top: 10px;
       }
       
       .home_stylish {
@@ -184,7 +233,7 @@
         color: #312b2b;
       }
       .home-container{
-        padding-top: 20px;
+        padding-top: 0px;
       }
       .button-group{
         display: flex;

@@ -10,6 +10,7 @@ import  GetInTouch  from './Pages/GetInTouch';
 import { Layout } from './layout/layout';
 import Vegabond from './Images/Vega.gif'
 import "./index.css"
+import ScrollPage from '../src/Scrollanimation/Scrollanimation';
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<ScrollPage/>} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/features" element={<Features />} />
           <Route path="/getapplication" element={<GetApplication />} />

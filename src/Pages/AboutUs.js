@@ -42,13 +42,13 @@ const AboutUs = () => {
                 </div>
                 <div className="social-media">
                   <div className="social-icon">
-                    <FaFacebookF />
+                    <FaFacebookF/>
                   </div>
                   <div className="social-icon">
-                    <FaInstagram />
+                    <FaInstagram/>
                   </div>
                   <div className="social-icon">
-                    <SlSocialTwitter />
+                    <SlSocialTwitter/>
                   </div>
                 </div>
               </div>

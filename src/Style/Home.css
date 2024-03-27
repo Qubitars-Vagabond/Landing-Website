@@ -34,8 +34,6 @@
 
 .animatiom-image img{
   width: 100%;
-
-  
 }
 .image-section {
   --childs: 3;
@@ -47,7 +45,7 @@
 
 .box {
   width: calc((100% / var(--childs)));
-  height:12cm;
+  height: 12cm;
   background-color: white;
   cursor: pointer;
   background-size: cover;
@@ -57,26 +55,27 @@
   transition: width 300ms 50ms ease-in-out;
 }
 
-.box:hover {
+.box:hover,
+.box.hovered {
   width: calc((100% / (var(--childs) - 2)));
+  width: 50%;
 }
-
 .box-1 {
   background-image: url("../Images/Rectangle 2.png");
+  width: 19%;
 }
 
 .box-2 {
   background-image: url("../Images/Group\ 340.png");
+  width: 19%;
 }
 
 .box-3 {
   background-image: url("../Images/Group 3411.png");
+  width: 19%;
 }
 
-.box-2:hover ~ .box-1,
-.box-3:hover ~ .box-1 {
-  width: calc((100% / (var(--childs) - 2)));
-}
+
 
 .App_btn {
   width: 175px;
@@ -127,11 +126,12 @@
   .animatiom-image{
     width: 100%;
     display: block;
+    padding: 0;
     }
     .home_style {
      font-family: Lato;
      font-size: 60px;
-     padding: 20px;
+     padding: 30px;
      font-weight: 500;
      line-height: 70px;
      letter-spacing: 0em;
@@ -145,7 +145,7 @@
      font-weight: 400;
      line-height: 40px;
      letter-spacing: 0em;
-     padding: 20px;
+     padding: 30px;
 
      color: #312b2b;
    }
@@ -160,6 +160,13 @@
     width: 100%;
     margin: auto;
    }
+   .image-section {
+    --childs: 3;
+    --gap: 10px;
+    display: flex;
+    gap: var(--gap);
+    justify-content: center;
+  }
  
 }
    @media (max-width: 992px) {
@@ -241,6 +248,13 @@
       }
       .animatiom-image img{
         display: none;
+      }
+      .image-section {
+        --childs: 3;
+        --gap: 10px;
+        display: flex;
+        gap: var(--gap);
+        justify-content: center;
       }
 
       .App_btn {

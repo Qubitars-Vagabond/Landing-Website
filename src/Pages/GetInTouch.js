@@ -8,6 +8,7 @@ import { Ri24HoursFill } from "react-icons/ri";
 import { withFormik } from "formik";
 import * as Yup from "yup";
 import Field from "../Common/Field";
+import Personimage from '../Images/person-icon.png'
 
 const fields = {
   sections: [
@@ -116,7 +117,8 @@ const GetInTouch = (props) => {
                 <Ri24HoursFill className="icon-contact" />
                 <p className="contact-text">24 Hours Service</p>
               </div>
-              <div className="benifit_card_corner"></div>
+              <div className="benifit_card_corner">
+              </div>
             </div>
           </div>
         </div>

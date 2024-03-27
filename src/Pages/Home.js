@@ -18,7 +18,7 @@ export const Home = () => {
   const [user, setUser] = useState({
     img1: Rectangle
   });
-  const [isPlayHovered, setIsPlayHovered] = useState(false);
+  const [isPlayHovered, setIsPlayHovered] = useState(1);
 
   const handlePlayHover = () => {
     setIsPlayHovered(true);
@@ -27,6 +27,16 @@ export const Home = () => {
   const handlePlayLeave = () => {
     setIsPlayHovered(false);
   };
+  const [hoveredBox, setHoveredBox] = useState(1);
+
+  const handleMouseEnter = (boxNumber) => {
+    setHoveredBox(boxNumber);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredBox(1);
+  };
+
 
   return (
     <>
@@ -67,8 +77,7 @@ export const Home = () => {
                 <button
                   className="Play_btn"
                   onMouseEnter={handlePlayHover}
-                  onMouseLeave={handlePlayLeave}
-                >
+                  onMouseLeave={handlePlayLeave}>
                   <span className="m-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -86,10 +95,22 @@ export const Home = () => {
               </div>
             </div>
             <div className="col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-6 animatiom-image">
-              <section class="image-section">
-                <div class="box box-1"></div>
-                <div class="box box-2"></div>
-                <div class="box box-3"></div>
+              <section className="image-section">
+                <div
+                  className={`box box-1 ${hoveredBox === 1 ? 'hovered' : ''}`}
+                  onMouseEnter={() => handleMouseEnter(1)}
+                  onMouseLeave={handleMouseLeave}
+                ></div>
+                <div
+                  className={`box box-3 ${hoveredBox === 3 ? 'hovered' : ''}`}
+                  onMouseEnter={() => handleMouseEnter(3)}
+                  onMouseLeave={handleMouseLeave}
+                ></div>
+                <div
+                  className={`box box-2 ${hoveredBox === 2 ? 'hovered' : ''}`}
+                  onMouseEnter={() => handleMouseEnter(2)}
+                  onMouseLeave={handleMouseLeave}
+                ></div>
               </section>
             </div>
           </div>

@@ -48,14 +48,14 @@ export const Home = () => {
                 data-aos="zoom-in-right"
                 data-aos-duration="2000"
                 className="home_style">
-                Have bindle, will travel.
+                Have bindle, will travel !
 
               </p>
               <p
                 data-aos="zoom-in-right"
                 data-aos-duration="2000"
                 className="home_stylish">
-                The first travel app that utilizes a revolutionary map to track your epic adventures!
+                The first travel app that utilizes a revolutionary map to track your epic adventures.
               </p>
               <div className="button-group">
                 <button className={`App_btn ${isPlayHovered ? 'hovered' : ''}`}>

@@ -14,7 +14,7 @@ const AboutUs = () => {
     <section>
       <div className="container  about-top">
         <div className="row p-0">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 mb-3">
             <div className="app_service_card_1">
               <div className="app_service_car_head">
                 <h3
@@ -54,13 +54,14 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 About-image">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 About-image">
             <img
               src={Rectanglefive}
               className="img-fluid"
               alt="switch"
               loading="lazy"
             />
+            
           </div>
         </div>
       </div>

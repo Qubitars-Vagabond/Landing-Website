@@ -75,7 +75,7 @@ export const Home = () => {
                   App Store
                 </button>
                 <button
-                  className="store_btn"
+                  className="Play_btn"
                   onMouseEnter={handlePlayHover}
                   onMouseLeave={handlePlayLeave}>
                   <span className="m-2">

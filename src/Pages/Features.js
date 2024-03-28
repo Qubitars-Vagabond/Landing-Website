@@ -9,7 +9,7 @@ AOS.init();
 const Features = () => {
   return (
     <div>
-      <div className="container mt-4">
+      <div className="container mt-2">
         
         <div className="start_head">
         <h5

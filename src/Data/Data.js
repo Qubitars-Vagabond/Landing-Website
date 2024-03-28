@@ -13,7 +13,7 @@ const Data = {
     {
       title: "CUSTOMIZABLE WORLD MAP",
       paragraph:
-        "Shade in the states and countries you’ve visited and customize the colors as well as the map’s name.",
+        "Shade in the states and countries you’ve visited and customize the colors ",
       image: Pinimage,
     },
     {
@@ -33,7 +33,7 @@ const Data = {
     {
       title: "TRACK YOUR STATS ",
       paragraph:
-        "VAGABOND tracks how many U.S. states and countries you have visited along with the percentage of the world you have seen.",
+        "VAGABOND tracks how many U.S. states and countries ",
       image: Tracker,
     },
 

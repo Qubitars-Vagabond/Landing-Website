@@ -27,7 +27,7 @@ const AboutUs = () => {
                   data-aos="zoom-out-down"
                   data-aos-duration="2000"
                   className="Sub_heading">
-                  Have bindle will travel.
+                  Have bindle will travel !
                 </h1>
                 <div className="app_service_para_img">
                   <div className="app_service_card_para">

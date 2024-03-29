@@ -74,9 +74,6 @@
   background-image: url("../Images/Group 3411.png");
   width: 19%;
 }
-
-
-
 .App_btn {
   width: 175px;
   height: 57px;
@@ -118,7 +115,7 @@
   gap: 20px;
 }
 .hovered {
-  background-color: white;
+  background-color: #345473;
   color:black;
 
 }

@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar } from './Navbar/Navbar';
+import  Navbar  from './Navbar/Navbar';
 import { Home } from './Pages/Home';
 import  About  from './Pages/AboutUs';
 import  Features  from './Pages/Features';
 import { GetApplication } from './Pages/GetApplication';
 import  GetInTouch  from './Pages/GetInTouch';
-import { Layout } from './layout/layout';
+import  Layout  from './layout/layout';
 import Vegabond from './Images/Vega.gif'
 import "./index.css"
 import ScrollPage from '../src/Scrollanimation/Scrollanimation';

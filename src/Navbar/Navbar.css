@@ -1,26 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.nav_link {
-  font-family: Lato;
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #312B2B;
-  text-decoration: none;
-  list-style: none;
-}
-
-
-.nav_link:hover {
-  color: #00BBDC;
-   
-}
 
 .get_btn {
   width: 175px;
@@ -36,37 +13,3 @@
   letter-spacing: 0em;
 }
 
-.btn-primary {
-  color: black;
-  background-color: #EAEAEA;
-  border-color: #EAEAEA;
-  font-size: 25px;
-}
-
-.btn-primary:hover {
-  color: black;
-  background-color: #EAEAEA;
-  border-color: #EAEAEA;
-}
-
-.btn-primary:focus {
-  color: black;
-  background-color: #EAEAEA;
-  border-color: #EAEAEA;
-  box-shadow: none;
-}
-
-.offcanvas-top {
-  height: 100%;
-}
-
-.offcanvas {
-  background-color: #EAEAEA;
-}
-
-.close_btn {
-  border: none;
-  background: none;
-  font-size: 40px;
-  color: #00BBDC;
-}

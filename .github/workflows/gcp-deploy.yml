@@ -20,7 +20,7 @@ jobs:
       - name: Installing Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Installing NPM packages
         run: npm install
@@ -31,12 +31,12 @@ jobs:
       - name: Running tests
         run: npm run test
 
-      - name: Deploy to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.HOSTINGER_SERVER }}
-          username: ${{ secrets.HOSTINGER_USERNAME }}
-          password: ${{ secrets.HOSTINGER_PASSWORD }}
-          local-dir: ./build  # Change this if your build output directory is different
-          remote-dir: /public_html  # Change this to your remote directory
-          protocol: ftp
+      # - name: Deploy to Hostinger
+      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      #   with:
+      #     server: ${{ secrets.HOSTINGER_SERVER }}
+      #     username: ${{ secrets.HOSTINGER_USERNAME }}
+      #     password: ${{ secrets.HOSTINGER_PASSWORD }}
+      #     local-dir: ./build  # Change this if your build output directory is different
+      #     remote-dir: /public_html  # Change this to your remote directory
+      #     protocol: ftp

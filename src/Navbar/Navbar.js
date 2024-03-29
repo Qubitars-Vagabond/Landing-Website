@@ -84,10 +84,6 @@ function Navbar() {
       prevScrollpos = currentScrollPos;
     };
   }, []);
-  const [activeTab, setActiveTab] = useState('home');
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
 
   return (
     <Wrapper id="navWaper">
@@ -97,8 +93,8 @@ function Navbar() {
             <div className="nav-logo">
               <img
                 src={Logo}
-                className="img-fluid "
-                alt="logo"
+                className="img-fluid"
+                alt="logo"  
                 onClick={() => navigate("/")}
                 style={{cursor: "pointer"}}
               />

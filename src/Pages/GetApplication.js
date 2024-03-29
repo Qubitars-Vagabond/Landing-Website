@@ -42,7 +42,7 @@ export const GetApplication = () => {
                The first travel app that utilizes a revolutionary map to track your epic adventures!   VAGABOND’s features include a customizable world map, a bucket list, trip tracking, photo organizer, and the ability to connect with other VAGABONDs.
               </p>
               <div className="Application-group">
-                <button className={`Feature_btn mt-3 mr-md-5 ${isPlayHovered ? 'hovered' : ''}`}>
+                <button className={`Feature_btn  ${isPlayHovered ? 'hovered' : ''}`}>
                   <span className="m-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

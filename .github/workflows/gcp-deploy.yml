@@ -3,40 +3,28 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - main  # Change this to match your main branch name
 
 jobs:
-  build:
-    name: Build
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Installing Node.js
-        uses: actions/setup-node@v1
+      - name: Install dependencies
+        run: npm install  # Or use yarn if you prefer
+
+      - name: Build
+        run: npm run build  # Or your build command if using a different build tool
+
+      - name: Deploy to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          node-version: 20
-
-      - name: Installing NPM packages
-        run: npm install
-
-      - name: Building project
-        run: npm run build
-
-      - name: Running tests
-        run: npm run test
-
-      # - name: Deploy to Hostinger
-      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      #   with:
-      #     server: ${{ secrets.HOSTINGER_SERVER }}
-      #     username: ${{ secrets.HOSTINGER_USERNAME }}
-      #     password: ${{ secrets.HOSTINGER_PASSWORD }}
-      #     local-dir: ./build  # Change this if your build output directory is different
-      #     remote-dir: /public_html  # Change this to your remote directory
-      #     protocol: ftp
+          server: ${{ secrets.HOSTINGER_SERVER }}
+          username: ${{ secrets.HOSTINGER_USERNAME }}
+          password: ${{ secrets.HOSTINGER_PASSWORD }}
+          local-dir: ./build  # Change this if your build output directory is different
+          remote-dir: /path/to/your/remote/directory  # Change this to your remote directory
+          protocol: ftp

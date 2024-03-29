@@ -84,6 +84,10 @@ function Navbar() {
       prevScrollpos = currentScrollPos;
     };
   }, []);
+  const [activeTab, setActiveTab] = useState('home');
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
     <Wrapper id="navWaper">
@@ -117,7 +121,7 @@ function Navbar() {
                     scroll={(el) => scrollWithOffset(el)}
                     onClick={() => {
                       setMobileMenu(false);
-                    }}>
+                    }} >
                    
                     About
                   </Link>

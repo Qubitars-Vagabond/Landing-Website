@@ -1,8 +1,10 @@
 name: 🚀 Deploy File to cPanel
+
 on:
   push:
     branches:
       - master
+
 jobs:
   FTP-Deploy-Action:
     name: 🎉 Deploy
@@ -31,7 +33,8 @@ jobs:
         run: |
           npm install
           git reset --hard
-       - name: Deploy to Hostinger
+
+      - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.HOSTINGER_SERVER }}

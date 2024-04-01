@@ -2,7 +2,7 @@
   "name": "vagabond",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Qubitars-Vagabond/Landing-Website.git" ,
+  "homepage": "https://thevagabondapp.com/" ,
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
@@ -31,19 +31,20 @@
     "yup": "^1.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts --max_old_space_size=8096 build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint --fix --ext .js,.jsx .",
-    "json-serve": "node public/server.js",
-    "start-developer": "concurrently \"react-scripts start\" \"node public/server.js\""
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "lint": "eslint src"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qubitars-Vagabond/Landing-Website.git"
   },
   "browserslist": {
     "production": [

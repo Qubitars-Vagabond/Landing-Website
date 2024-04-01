@@ -40,5 +40,4 @@ jobs:
           server: ${{ secrets.HOSTINGER_SERVER }}
           username: ${{ secrets.HOSTINGER_USERNAME }}
           password: ${{ secrets.HOSTINGER_PASSWORD }}
-          local-dir: build/
           protocol: ftp

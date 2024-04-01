@@ -42,16 +42,4 @@ jobs:
           password: ${{ secrets.HOSTINGER_PASSWORD }}
           port: ${{ secrets.HOSTINGER_PORT }} 
           local-dir: build/
-          remote-dir: /public_html/ 
           protocol: ftp
-          exclude: |
-            - public/**
-            - vendor/**
-            - crons/**
-            - storage/**
-            - .github
-            - .github/**
-            - .env
-            - composer.json
-            - composer.lock
-            - .htaccess

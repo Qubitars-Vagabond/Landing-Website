@@ -34,12 +34,10 @@ jobs:
           npm install
           git reset --hard
 
-      - name: Deploy to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      - name: 📂 Sync folders and files to the server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ${{ secrets.HOSTINGER_SERVER }}
-          username: ${{ secrets.HOSTINGER_USERNAME }}
-          password: ${{ secrets.HOSTINGER_PASSWORD }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/
-          remote-dir: /public_html/ 
-          protocol: ftp
